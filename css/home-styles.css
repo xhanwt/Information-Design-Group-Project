@@ -1,0 +1,238 @@
+.home-nav-cards {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  text-decoration: none !important;
+}
+
+.main-page-image {
+  grid-column: span 3;
+  height: 100px;
+  width: 100px;
+}
+
+.home-nav-card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none !important;
+}
+
+.home-main-title {
+  display: flex;
+
+  font-family: Montserrat;
+  background-size: cover;
+  background-position: center;
+  background-color: #1e201f;
+
+  color: #ffff;
+  border-radius: 15px;
+  grid-column: span 3;
+  padding: 10px;
+
+  font-size: 2rem;
+}
+
+.home-main-title .text {
+  display: block;
+  align-self: flex-end;
+  font-size: clamp(1em, 3vw + 1em, 5em);
+}
+
+
+
+.home-explore {
+  background-color: gray;
+  border-radius: 15px;
+}
+
+
+
+@media only screen and (max-width: 510px) {
+  .home-nav-cards {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 10px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .home-nav-cards {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+  }
+
+
+
+  .home-main-title {
+    grid-column: span 4;
+  }
+
+  .home-description {
+
+    grid-column: span 1;
+    font-size: 1.3rem;
+
+  }
+
+  .home-explore {
+    grid-column: span 2;
+  }
+
+
+}
+
+@media only screen and (max-width: 980px) {
+  .home-nav-card {
+    height: 30vh !important;
+  }
+
+}
+
+.home-nav-card {
+  display: flex;
+  height: 100%;
+  background-color: #88B29F;
+  border-radius: 15px;
+  color: white;
+
+}
+
+.home-nav-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* wanted to apply green tint over the image - asked ChatGPT */
+  /* Green tint */
+  mix-blend-mode: multiply;
+  /* Blend mode */
+  z-index: 1;
+  /* Under the text */
+  border-radius: 15px;
+}
+
+.home-nav-card>* {
+  position: relative;
+  z-index: 2;
+
+}
+
+
+.home-nav-card.get-active {
+  font-family: Montserrat;
+  padding-left: 15px;
+  font-size: 1.2rem;
+}
+
+.home-nav-card.get-active a {
+  text-decoration: none;
+  color: #ffffff
+}
+
+.home-nav-card.get-active a:hover {
+  text-decoration: none;
+  color: #919191
+}
+
+.home-main-title {
+  background-size: cover;
+  background-position: center;
+}
+
+
+.home-nav-card.connect {
+  font-family: Montserrat;
+  padding-left: 15px;
+  font-size: 1.2rem;
+}
+
+.home-nav-card.connect a {
+  text-decoration: none;
+  color: #ffffff
+}
+
+.home-nav-card.connect a:hover {
+  text-decoration: none;
+  color: #919191
+}
+
+.home-nav-card.knowledge {
+  font-family: Montserrat;
+  padding-left: 15px;
+  font-size: 1.2rem;
+}
+
+.home-nav-card.knowledge a {
+  text-decoration: none;
+  color: #ffffff
+}
+
+.home-nav-card.knowledge a:hover {
+  text-decoration: none;
+  color: #919191
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-nav-card.explore {
+  font-family: Montserrat;
+  padding-left: 15px;
+  font-size: 1.2rem;
+}
+
+.home-nav-card.explore a {
+  text-decoration: none;
+  color: #ffffff
+}
+
+.home-nav-card.explore a:hover {
+  text-decoration: none;
+  color: #919191
+}
+
+
+
+.home-description {
+  background-color: #45637e;
+  border-radius: 15px;
+  color: #E8E2D5;
+  padding: 20px;
+}
+
+.home-nav-card {
+  position: relative;
+  font-size: 1rem !important;
+}
+
+.card-top {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+}
+
+.card-top img {
+
+  height: 0.05vw !important;
+  width: auto !important;
+}
+
+.home-nav-card h2 {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+}
